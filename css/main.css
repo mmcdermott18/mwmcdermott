@@ -102,6 +102,7 @@ body {
 
 #container {
     width: 100vw;
+    clear: both;
     /*transitionDuration: 0;*/
     /*display: flex;
     flex-wrap: wrap;*/
@@ -110,6 +111,7 @@ body {
 header {
     margin: 1%;
     width: 98%;
+    clear: both;
 }
 
 .grid-sizer { width: 20%; }
@@ -157,6 +159,13 @@ header {
 .description p {
     font-size: .8em;
     font-weight: 300;
+}
+
+#headleft {
+  float: left;
+}
+#headright {
+  float: right;
 }
 
 h1 {
