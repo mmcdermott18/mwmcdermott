@@ -123,9 +123,13 @@ header {
     /*background-color: darkturquoise;*/
     float: left;
 }
-
-
+.work.double { width: 38%; }
 .img {
+    width: 100%;
+    background-color: tomato;
+}
+
+.img1 {
     width: 100%;
     height: 300px;
     background-color: tomato;
@@ -157,8 +161,9 @@ header {
 }
 
 .description p {
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 300;
+    letter-spacing: .1px;
 }
 
 #headleft {
@@ -166,6 +171,10 @@ header {
 }
 #headright {
   float: right;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
@@ -185,12 +194,17 @@ a {
 }
 
 a:hover, a:active {
-    text-transform: underline;
+    text-decoration: none;
+    border-bottom: 3px solid tomato;
     color: tomato;
 }
 
-
-
+.img a {
+  -webkit-transition: mix-blend-mode 2s ease;
+}
+.img a:hover, .img a:active {
+  mix-blend-mode: multiply;
+}
 
 
 
@@ -275,24 +289,34 @@ a:hover, a:active {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 1800px) {
+  .grid-sizer { width: 16.666666666%; }
+  .work { width: 14.66666666%;}
+  .work.double { width: 31.33333333%; }
+}
+
 @media screen and (max-width: 1200px) {
   .grid-sizer { width: 25%; }
   .work { width: 23%;}
+  .work.double { width: 48%; }
 }
 
 @media screen and (max-width: 900px) {
   .grid-sizer { width: 33.3333333%; }
   .work { width: 31.33333333%;}
+  .work.double { width: 31.333333%; }
 }
 
 @media screen and (max-width: 720px) {
   .grid-sizer { width: 50%; }
   .work { width: 48%;}
+  .work.double { width: 98%; }
 }
 
 @media screen and (max-width: 420px) {
   .grid-sizer { width: 100%; }
   .work { width: 96%; margin: 1% 2%; }
+  .work.double { width: 96%; margin: 1% 2%; }
   header { width: 96%; margin: 1% 2%; }
   header h1 { font-size: 1em; }
 }
