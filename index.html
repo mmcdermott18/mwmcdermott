@@ -282,22 +282,19 @@
         <script src="js/main.js"></script>
         <script>
             var container = document.querySelector('#container');
-            var msnry = new Masonry( container, {
-              // options
-              itemSelector: '.work',
-              transitionDuration: '0.2s',
-              percentPosition: true,
-              columnWidth: container.querySelector('.grid-sizer')
+            var msnry;
+            // initialize Masonry after all images have loaded
+            imagesLoaded( container, function() {
+                msnry = new Masonry( container, {
+                    // options
+                    itemSelector: '.work',
+                    transitionDuration: '0.2s',
+                    percentPosition: true,
+                    columnWidth: container.querySelector('.grid-sizer')
+                });
             });
         </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('img').load(function(){
-                    $("#container").masonry();
-                });
-                $("#container").masonry();
-            });
-</script>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
