@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -288,6 +289,13 @@
               percentPosition: true,
               columnWidth: container.querySelector('.grid-sizer')
             });
+        </script>
+         <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#container').imagesLoaded( function() {
+              // images have loaded
+            });
+        });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
