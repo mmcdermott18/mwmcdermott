@@ -131,18 +131,10 @@ header {
     float: left;
 }
 .work.double { width: 38%; }
+
 .img {
     width: 100%;
-    background-color: tomato;
-}
-
-.img2 {
-    width: 100%;
     background-color: darkturquoise;
-}
-.img3 {
-    width: 100%;
-    background-color: gold;
 }
 
 .title {
@@ -227,14 +219,14 @@ a {
 
 a:hover, a:active {
     text-decoration: none;
-    border-bottom: 3px solid tomato;
-    color: tomato;
+    border-bottom: 3px solid darkturquoise;
+    color: darkturquoise;
 }
 
-.img a, .img2 a, .img3 a {
+.img a {
   -webkit-transition: mix-blend-mode 2s ease;
 }
-.img a:hover, .img a:active, .img2 a:hover, .img2 a:active, .img3 a:hover, .img3 a:active {
+.img a:hover, .img a:active {
   mix-blend-mode: multiply;
 }
 
