@@ -291,11 +291,9 @@
             });
         </script>
          <script type="text/javascript">
-        $( document ).ready(function() {
-            $('#container').imagesLoaded( function() {
-              // images have loaded
-            });
-        });
+            imagesLoaded( document.querySelector('#container'), function( instance ) {
+                console.log('all images are loaded');
+                });
         </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
