@@ -324,15 +324,15 @@ a:hover, a:active {
   .insideimg.double { width: 38%; }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .grid-sizer { width: 25%; }
   .work { width: 23%;}
   .work.double { width: 48%; }
   .inside-grid-sizer { width: 33.3333333%; }
   .text { width: 23%; }
   #images { width: 75%; margin-left: 25%; }
-  .insideimg { width: 31.3333333%; }
-  .insideimg.double { width: 31.3333333%; }
+  .insideimg { width: 98%; }
+  .insideimg.double { width: 98%; }
 }
 
 @media screen and (max-width: 900px) {
@@ -351,8 +351,8 @@ a:hover, a:active {
   .work { width: 48%;}
   .work.double { width: 98%; }
   .inside-grid-sizer { width: 100%; }
-  .text { width: 98%; position: inherit; }
-  #images { width: 100%; margin: 0; }
+  .text { width: 98%; margin: 0 1%; position: inherit; }
+  #images { width: 98%; margin: 0 1%; }
   .insideimg { width: 100%; margin: 1% 0; }
   .insideimg.double { width: 100%; margin: 1% 0; }
 }
