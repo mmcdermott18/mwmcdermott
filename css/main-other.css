@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    background-color: white;
+    background-color: whitesmoke;
     /*overflow: hidden;*/
     font-family: 'Lato', sans-serif;
 }
@@ -122,180 +122,65 @@ h1 {
     letter-spacing: .08em;
     font-size: 2.9vw;
     font-weight: 300;
-    color: white;
+    color: darkgrey;
     line-height: 1.5em;
 }
-#key h1 {
-  text-align: center;
-  font-size: 1.3vw;
-}
-.web {
-  color: white;
-  /*border-bottom: 0 solid yellow;*/
-  background-color: yellow;
-  padding: 0 5px;
-}
-.poster {
-  color: white;
-  /*border-bottom: 0 dashed mediumvioletred;*/
-  background-color: mediumvioletred;
-  padding: 0 5px;
-}
-.book {
-  color: white;
-  /*border-bottom: 0 dotted greenyellow;*/
-  background-color: greenyellow;
-  padding: 0 5px;
-}
-.identity {
-  color: white;
-  /*border-bottom: 0 double blue;*/
-  background-color: blue;
-  padding: 0 5px;
-}
-.other {
-  color: white;
-  /*border-bottom: 0 solid mediumslateblue;*/
-  background-color: mediumslateblue;
-  padding: 0 5px;
-}
-
-#key .web, #key .poster, #key .book, #key .identity, #key .other {
-  /*border-width: 1px;*/
-  padding: 0 3px;
-} 
-
 .head {
-  color: white;
+  color: darkgrey;
 }
 .years {
-  color: silver;
-  background-color: white;
+  color: whitesmoke;
+  background-color: darkturquoise;
   padding: 0 4px;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .divide {
-  color: silver;
-  font-weight: 900;
+  color: darkturquoise;
+  font-weight: 400;
+  /*display: none;*/
 }
-
-#small {
-  display: none;
-}
-ul {
-  list-style-type: none;
-}
-
-li {
-  font-size: 6vw;
-}
-
+.active {color: tomato;}
+.fade {color: gainsboro;}
 p {
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: white;
-    background-color: white;
+    color: darkgrey;
+    /*background-color: oldlace;*/
     padding: 0 5px;
+    white-space: nowrap;
 }
 
 a:hover, a:active {
     text-decoration: none;
-    color: white;
-    background-color: white;
+    color: darkturquoise;
+    border-bottom: 3px solid darkturquoise;
     padding: 0 5px;
 }
+a.web:hover {color: tomato; border-bottom: 2px solid tomato;}
+a.poster:hover {color: darkorange; border-bottom: 2px solid darkorange;}
+a.book:hover {color: crimson; border-bottom: 2px solid crimson;}
+a.identity:hover {color: darkred; border-bottom: 2px solid darkred;}
+a.other:hover {color: mediumvioletred; border-bottom: 2px solid mediumvioletred;}
 
 a#name {
     text-decoration: none;
-    /*color: midnightblue;*/
-    background-color: midnightblue;
+    color: darkturquoise;
+    /*background-color: midnightblue;*/
     padding: 0 5px;
 
 }
 
 a#name:hover, a#name:active {
     text-decoration: none;
-    /*border-color: white;*/
-    color: midnightblue;
-    background-color: white;
+    border-bottom: 3px solid darkturquoise;
+    color: darkturquoise;
+    /*background-color: oldlace;*/
     padding: 0 5px;
 }
-a.web {
-  color: white;
-  /*border-bottom: 2px solid yellow;*/
-  background-color: paleturquoise;
-  padding: 0 5px;
-}
-a.web:hover, a.web:active {
-  text-decoration: none;
-  /*border-bottom: 3px solid yellow;*/
-  color: paleturquoise;
-  background-color: white;
-  padding: 0 5px;
-}
-a.poster {
-  color: white;
-  /*border-bottom: 2px dashed mediumvioletred;*/
-  background-color: darkturquoise;
-  padding: 0 5px;
-}
-a.poster:hover, a.poster:active {
-  text-decoration: none;
-  /*border-bottom: 3px dashed mediumvioletred;*/
-  color: darkturquoise;
-  background-color: white;
-  padding: 0 5px;
-}
-a.book {
-  color: white;
-  /*border-bottom: 2px dotted greenyellow;*/
-  background-color: steelblue;
-  padding: 0 5px;
-}
-a.book:hover, a.book:active {
-  text-decoration: none;
-  /*border-bottom: 3px dotted greenyellow;*/
-  color: steelblue;
-  background-color: white;
-  padding: 0 5px;
-}
-a.identity {
-  color: white;
-  /*border-bottom: 2px double blue;*/
-  background-color: deepskyblue;
-}
-a.identity:hover, a.identity:active {
-  text-decoration: none;
-  /*border-bottom: 3px double blue;*/
-  color: deepskyblue;
-  background-color: white;
-  padding: 0 5px;
-}
-a.other {
-  color: white;
-  /*border-bottom: 2px solid mediumslateblue;*/
-  background-color: mediumaquamarine;
-}
-
-a.other:hover, a.other:active {
-  text-decoration: none;
-  /*border-bottom: 3px solid mediumslateblue;*/
-  color: mediumaquamarine;
-  background-color: white;
-  padding: 0 5px;
-}
-.img a {
-  -webkit-transition: -webkit-filter 700ms ease;
-  -webkit-filter: grayscale(1);
-}
-.img a:hover, .img a:active {
-  -webkit-filter: none;
-}
-
 
 
 
@@ -389,14 +274,17 @@ a.other:hover, a.other:active {
 
 @media screen and (max-width: 900px) {
   h1 { font-size: 4vw; }
+  a { white-space: normal; }
 }
 
 @media screen and (max-width: 720px) {
   h1 { font-size: 4.5vw; }
+  a { white-space: normal; }
 }
 
 @media screen and (max-width: 420px) {
   h1 { font-size: 6vw; line-height: 1.5em }
+  a { white-space: normal; }
   
 }
 
