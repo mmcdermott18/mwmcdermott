@@ -104,19 +104,10 @@
         <script src="js/main.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#webhover').hover(function () {
-                    $('.web').addClass('active');
-                }, function () {
-                    $('.web').removeClass('active');
+                $('#webhover').click(function () {
+                    $('.web').toggleClass('active');
                 });
             });
-            $(document).on('touchstart','#webhover' ,function(){
-                $(".web").addClass('active');
-            }).on('touchend', function(){
-                $(".web").removeClass('active');
-            }).on("touchcancel", function() {
-                $(".web").removeClass('active');
-         });
          </script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
