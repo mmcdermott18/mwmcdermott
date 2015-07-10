@@ -103,7 +103,7 @@ body {
 #container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #images {
@@ -119,11 +119,40 @@ img {
 }
 h1 {
     /*text-transform: uppercase;*/
-    letter-spacing: .1em;
+    letter-spacing: .08em;
     font-size: 2.9vw;
     font-weight: 300;
     color: oldlace;
 }
+#key h1 {
+  text-align: center;
+  font-size: 1.3vw;
+}
+.web {
+  color: yellow;
+  border-bottom: 0 solid yellow;
+}
+.poster {
+  color: mediumvioletred;
+  border-bottom: 0 dashed mediumvioletred;
+}
+.book {
+  color: greenyellow;
+  border-bottom: 0 dotted greenyellow;
+}
+.identity {
+  color: blue;
+  border-bottom: 0 double blue;
+}
+.other {
+  color: mediumslateblue;
+  border-bottom: 0 solid mediumslateblue;
+}
+
+#key .web, #key .poster, #key .book, #key .identity, #key .other {
+  border-width: 1px;
+} 
+
 .head {
   color: oldlace;
 }
@@ -167,15 +196,56 @@ a:hover, a:active {
 
 a#name {
     text-decoration: none;
-    color: oldlace;
+    color: midnightblue;
+    border-bottom: 3px solid midnightblue;
+
 }
 
 a#name:hover, a#name:active {
     text-decoration: none;
-    border-bottom: 3px solid midnightblue;
-    color: midnightblue;
+    border-bottom: 3px solid oldlace;
+    color: oldlace;
 }
-
+a.web {
+  color: oldlace;
+}
+a.web:hover, a.web:active {
+  text-decoration: none;
+  border-bottom: 3px solid yellow;
+  color: yellow;
+}
+a.poster {
+  color: oldlace;
+}
+a.poster:hover, a.poster:active {
+  text-decoration: none;
+  border-bottom: 3px dashed mediumvioletred;
+  color: mediumvioletred;
+}
+a.book {
+  color: oldlace;
+}
+a.book:hover, a.book:active {
+  text-decoration: none;
+  border-bottom: 3px dotted greenyellow;
+  color: greenyellow;
+}
+a.identity {
+  color: oldlace;
+}
+a.identity:hover, a.identity:active {
+  text-decoration: none;
+  border-bottom: 3px double blue;
+  color: blue;
+}
+a.other {
+  color: oldlace;
+}
+a.other:hover, a.other:active {
+  text-decoration: none;
+  border-bottom: 3px solid mediumslateblue;
+  color: mediumslateblue;
+}
 .img a {
   -webkit-transition: -webkit-filter 700ms ease;
   -webkit-filter: grayscale(1);
@@ -284,7 +354,7 @@ a#name:hover, a#name:active {
 }
 
 @media screen and (max-width: 420px) {
-  h1 { font-size: 6vw; }
+  h1 { font-size: 6vw; line-height: 1.5em }
   
 }
 
