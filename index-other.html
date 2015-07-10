@@ -110,11 +110,11 @@
                     $('.web').removeClass('active');
                 });
             });
-            $(document).on('vmousedown','#webhover' ,function(){
+            $(document).on('touchstart','#webhover' ,function(){
                 $(".web").addClass('active');
-            }).on('vmouseup', function(){
+            }).on('touchend', function(){
                 $(".web").removeClass('active');
-            }).on("vmousecancel", function() {
+            }).on("touchcancel", function() {
                 $(".web").removeClass('active');
          });
          </script>
