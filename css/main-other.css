@@ -227,64 +227,64 @@ a#name:hover, a#name:active {
 a.web {
   color: white;
   /*border-bottom: 2px solid yellow;*/
-  background-color: yellow;
+  background-color: paleturquoise;
   padding: 0 5px;
 }
 a.web:hover, a.web:active {
   text-decoration: none;
   /*border-bottom: 3px solid yellow;*/
-  color: yellow;
+  color: paleturquoise;
   background-color: white;
   padding: 0 5px;
 }
 a.poster {
   color: white;
   /*border-bottom: 2px dashed mediumvioletred;*/
-  background-color: mediumvioletred;
+  background-color: darkturquoise;
   padding: 0 5px;
 }
 a.poster:hover, a.poster:active {
   text-decoration: none;
   /*border-bottom: 3px dashed mediumvioletred;*/
-  color: mediumvioletred;
+  color: darkturquoise;
   background-color: white;
   padding: 0 5px;
 }
 a.book {
   color: white;
   /*border-bottom: 2px dotted greenyellow;*/
-  background-color: greenyellow;
+  background-color: steelblue;
   padding: 0 5px;
 }
 a.book:hover, a.book:active {
   text-decoration: none;
   /*border-bottom: 3px dotted greenyellow;*/
-  color: greenyellow;
+  color: steelblue;
   background-color: white;
   padding: 0 5px;
 }
 a.identity {
   color: white;
   /*border-bottom: 2px double blue;*/
-  background-color: blue;
+  background-color: deepskyblue;
 }
 a.identity:hover, a.identity:active {
   text-decoration: none;
   /*border-bottom: 3px double blue;*/
-  color: blue;
+  color: deepskyblue;
   background-color: white;
   padding: 0 5px;
 }
 a.other {
   color: white;
   /*border-bottom: 2px solid mediumslateblue;*/
-  background-color: mediumslateblue;
+  background-color: mediumaquamarine;
 }
 
 a.other:hover, a.other:active {
   text-decoration: none;
   /*border-bottom: 3px solid mediumslateblue;*/
-  color: mediumslateblue;
+  color: mediumaquamarine;
   background-color: white;
   padding: 0 5px;
 }
