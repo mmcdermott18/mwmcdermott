@@ -378,7 +378,7 @@ a#name:hover, a#name:active {
   a { white-space: normal; }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   h1 { font-size: 4.5vw; }
   a { white-space: normal; }
   #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
