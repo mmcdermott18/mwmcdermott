@@ -11,9 +11,8 @@
         <!-- Place favicon.ico in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/main-other.css">
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="../js/masonry.pkgd.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -21,34 +20,42 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-            <div id="headleft">    
-                <h1><a href="../index.html">Michael McDermott</a></h1>
-            </div>
-            <div id="headright">
-                <h1><a href="../index.html">X Close</a></h1>
-            </div>
-        </header>
-        <div id="insidecontainer">
-            <div class="text">
-                <div class="title">
-                    <p>Influenced</p>
+        <div id="containerinside">
+            <div id="text">
+                <div id="title">
+                    <p>MICHAEL MCDERMOTT</p>
                 </div>
                 <div class="description">
-                    <p>Three different variations on my thesis book from RISD. The content is all the same just the method of printing is different for each one.</p>
+                    <p class="project">Influenced</p>
+                    <p>YEAR: 2015</p>
+                    <p>CATEGORY: Book</p>
+                    <p>PRINTING METHOD: Screen printed cover, laser printed pages</p>
+                    <p>BINDING: Hand sewn coptic stitch</p>
+                    <p>REASON: Graduate school thesis book</p>
+                    <p>DESCRIPTION: Three different variations on my thesis book from RISD. The content is all the same just the method of printing is different for each one.</p>
                 </div>
             </div>
+            <div id="imagecontainer">
             <div id="images">
-                <div class="inside-grid-sizer"></div>
-                <div class="insideimg double">
+                <div class="full">
                     <img src="../img/influenced/2.jpg">
                 </div>
-                <div class="insideimg double">
+                <div class="full">
                     <img src="../img/influenced/3.jpg">
                 </div>
-                <div class="insideimg double">
+                <div class="full">
                     <img src="../img/influenced/1.jpg">
                 </div>
+            </div>
+            </div>
+            <div id="nav">
+                <h1>
+                    <a href="">Previous</a>
+                    <span class="divide"> / </span> 
+                    <a href="../index-other.html">Home</a>
+                    <span class="divide"> / </span> 
+                    <a href="">Next</a>
+                </h1>
             </div>
         </div>
 
@@ -56,16 +63,6 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
-        <script>
-            var container = document.querySelector('#images');
-            var msnry = new Masonry( container, {
-              // options
-              itemSelector: '.insideimg',
-              transitionDuration: '0.2s',
-              percentPosition: true,
-              columnWidth: container.querySelector('.inside-grid-sizer')
-            });
-        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

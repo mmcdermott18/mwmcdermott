@@ -103,9 +103,16 @@ body {
 #container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 1%;
+}
+#containerinside {
+    width: 100%;
+    /*margin-top: 1%;*/
 }
 
+#large {
+  margin-bottom: 50px;
+}
 #cat {
   cursor: pointer;
   -webkit-touch-callout: none;
@@ -114,11 +121,90 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: darkturquoise;
 }
 
+#cat h1, #nav h1 {
+  font-size: 16px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#cat .divide, #nav .divide {
+  color: whitesmoke;
+}
+#nav {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: darkturquoise;
+}
+#title {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: darkturquoise;
+}
+
+#title p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin: .4em 0;
+  
+}
+
+.project {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.description {
+  margin: 20px 0 0 0;
+}
+
+#text {
+  width: 30%;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+}
+#imagecontainer {
+  width: 60%;
+  float: right;
+}
+#images {
+  width: 90%;
+  margin: 0 auto;
+}
+.full {
+  margin: 0 0 1% 0;
+}
 img {
-  max-width: 25%;
-  margin: 0 5px;
+  max-width: 100%;
 }
 h1 {
     /*text-transform: uppercase;*/
@@ -149,7 +235,7 @@ h1 {
 .activeidentity {color: darkred;}
 .activeother {color: mediumvioletred;}
 p {
-    margin: 0;
+    margin: 4px 0;
 }
 
 a {
@@ -166,11 +252,11 @@ a:hover, a:active {
     border-bottom: 3px solid darkturquoise;
     padding: 0 5px;
 }
-a.web:hover {color: tomato; border-bottom: 2px solid tomato;}
-a.poster:hover {color: darkorange; border-bottom: 2px solid darkorange;}
-a.book:hover {color: crimson; border-bottom: 2px solid crimson;}
-a.identity:hover {color: darkred; border-bottom: 2px solid darkred;}
-a.other:hover {color: mediumvioletred; border-bottom: 2px solid mediumvioletred;}
+a.web:hover, a.web:active {color: tomato; border-bottom: 2px solid tomato;}
+a.poster:hover, a.poster:active {color: darkorange; border-bottom: 2px solid darkorange;}
+a.book:hover, a.book:active {color: crimson; border-bottom: 2px solid crimson;}
+a.identity:hover, a.identity:active {color: darkred; border-bottom: 2px solid darkred;}
+a.other:hover, a.other:active {color: mediumvioletred; border-bottom: 2px solid mediumvioletred;}
 
 a#name {
     text-decoration: none;
@@ -188,6 +274,15 @@ a#name:hover, a#name:active {
     padding: 0 5px;
 }
 
+#nav a {
+  font-size: 16px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#nav a:hover, #nav a:active {
+  border-bottom: 1px solid whitesmoke;
+}
 
 
 
@@ -286,6 +381,15 @@ a#name:hover, a#name:active {
 @media screen and (max-width: 720px) {
   h1 { font-size: 4.5vw; }
   a { white-space: normal; }
+  #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
+  #cat h1 {font-size: 16px; text-align: center; color: whitesmoke;}
+  #cat .divide { color: whitesmoke;}
+  #text {position: static; width: 90%; margin: 60px auto 5% auto; float: none; clear: both;}
+  #imagecontainer {position: static; width: 100%; margin: 0 auto 50px auto; float: none; clear: both;}
+  #images {width: 100%;}
+  #nav {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
+  #nav h1 {font-size: 16px; text-align: center; color: whitesmoke;}
+  #title { width: 100%; }
 }
 
 @media screen and (max-width: 420px) {
@@ -294,7 +398,12 @@ a#name:hover, a#name:active {
   #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
   #cat h1 {font-size: 16px; text-align: center; color: whitesmoke;}
   #cat .divide { color: whitesmoke;}
-  
+  #text {position: static; width: 90%; margin: 60px auto 5% auto; float: none; clear: both;}
+  #imagecontainer {position: static; width: 100%; margin: 0 auto 50px auto; float: none; clear: both;}
+  #images {width: 100%;}
+  #nav {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
+  #nav h1 {font-size: 16px; text-align: center; color: whitesmoke;}
+  #title { width: 100%; }
 }
 
 
