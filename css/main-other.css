@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    background-color: darkturquoise;
+    background-color: white;
     /*overflow: hidden;*/
     font-family: 'Lato', sans-serif;
 }
@@ -122,49 +122,61 @@ h1 {
     letter-spacing: .08em;
     font-size: 2.9vw;
     font-weight: 300;
-    color: oldlace;
+    color: white;
+    line-height: 1.5em;
 }
 #key h1 {
   text-align: center;
   font-size: 1.3vw;
 }
 .web {
-  color: oldlace;
-  border-bottom: 0 solid yellow;
+  color: white;
+  /*border-bottom: 0 solid yellow;*/
+  background-color: yellow;
+  padding: 0 5px;
 }
 .poster {
-  color: oldlace;
-  border-bottom: 0 dashed mediumvioletred;
+  color: white;
+  /*border-bottom: 0 dashed mediumvioletred;*/
+  background-color: mediumvioletred;
+  padding: 0 5px;
 }
 .book {
-  color: oldlace;
-  border-bottom: 0 dotted greenyellow;
+  color: white;
+  /*border-bottom: 0 dotted greenyellow;*/
+  background-color: greenyellow;
+  padding: 0 5px;
 }
 .identity {
-  color: oldlace;
-  border-bottom: 0 double blue;
+  color: white;
+  /*border-bottom: 0 double blue;*/
+  background-color: blue;
+  padding: 0 5px;
 }
 .other {
-  color: oldlace;
-  border-bottom: 0 solid mediumslateblue;
+  color: white;
+  /*border-bottom: 0 solid mediumslateblue;*/
+  background-color: mediumslateblue;
+  padding: 0 5px;
 }
 
 #key .web, #key .poster, #key .book, #key .identity, #key .other {
-  border-width: 1px;
+  /*border-width: 1px;*/
+  padding: 0 3px;
 } 
 
 .head {
-  color: oldlace;
+  color: white;
 }
 .years {
-  color: darkturquoise;
-  background-color: oldlace;
+  color: silver;
+  background-color: white;
   padding: 0 4px;
   font-weight: 900;
 }
 
 .divide {
-  color: oldlace;
+  color: silver;
   font-weight: 900;
 }
 
@@ -185,72 +197,96 @@ p {
 
 a {
     text-decoration: none;
-    color: midnightblue;
+    color: white;
+    background-color: white;
+    padding: 0 5px;
 }
 
 a:hover, a:active {
     text-decoration: none;
-    border-bottom: 3px solid oldlace;
-    color: oldlace;
+    color: white;
+    background-color: white;
+    padding: 0 5px;
 }
 
 a#name {
     text-decoration: none;
-    color: oldlace;
-    border-bottom: 3px solid midnightblue;
+    /*color: midnightblue;*/
+    background-color: midnightblue;
+    padding: 0 5px;
 
 }
 
 a#name:hover, a#name:active {
     text-decoration: none;
-    border-bottom: 3px solid oldlace;
-    color: oldlace;
+    /*border-color: white;*/
+    color: midnightblue;
+    background-color: white;
+    padding: 0 5px;
 }
 a.web {
-  color: oldlace;
-  border-bottom: 3px solid yellow;
+  color: white;
+  /*border-bottom: 2px solid yellow;*/
+  background-color: yellow;
+  padding: 0 5px;
 }
 a.web:hover, a.web:active {
   text-decoration: none;
-  border-bottom: 3px solid oldlace;
-  color: oldlace;
+  /*border-bottom: 3px solid yellow;*/
+  color: yellow;
+  background-color: white;
+  padding: 0 5px;
 }
 a.poster {
-  color: oldlace;
-  border-bottom: 3px dashed mediumvioletred;
+  color: white;
+  /*border-bottom: 2px dashed mediumvioletred;*/
+  background-color: mediumvioletred;
+  padding: 0 5px;
 }
 a.poster:hover, a.poster:active {
   text-decoration: none;
-  border-bottom: 3px dashed oldlace;
-  color: oldlace;
+  /*border-bottom: 3px dashed mediumvioletred;*/
+  color: mediumvioletred;
+  background-color: white;
+  padding: 0 5px;
 }
 a.book {
-  color: oldlace;
-  border-bottom: 3px dotted greenyellow;
+  color: white;
+  /*border-bottom: 2px dotted greenyellow;*/
+  background-color: greenyellow;
+  padding: 0 5px;
 }
 a.book:hover, a.book:active {
   text-decoration: none;
-  border-bottom: 3px dotted oldlace;
-  color: oldlace;
+  /*border-bottom: 3px dotted greenyellow;*/
+  color: greenyellow;
+  background-color: white;
+  padding: 0 5px;
 }
 a.identity {
-  color: oldlace;
-  border-bottom: 3px double blue;
+  color: white;
+  /*border-bottom: 2px double blue;*/
+  background-color: blue;
 }
 a.identity:hover, a.identity:active {
   text-decoration: none;
-  border-bottom: 3px double oldlace;
-  color: oldlace;
+  /*border-bottom: 3px double blue;*/
+  color: blue;
+  background-color: white;
+  padding: 0 5px;
 }
 a.other {
-  color: oldlace;
-  border-bottom: 3px solid mediumslateblue;
+  color: white;
+  /*border-bottom: 2px solid mediumslateblue;*/
+  background-color: mediumslateblue;
 }
 
 a.other:hover, a.other:active {
   text-decoration: none;
-  border-bottom: 3px solid oldlace;
-  color: oldlace;
+  /*border-bottom: 3px solid mediumslateblue;*/
+  color: mediumslateblue;
+  background-color: white;
+  padding: 0 5px;
 }
 .img a {
   -webkit-transition: -webkit-filter 700ms ease;
