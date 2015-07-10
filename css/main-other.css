@@ -129,23 +129,23 @@ h1 {
   font-size: 1.3vw;
 }
 .web {
-  color: yellow;
+  color: oldlace;
   border-bottom: 0 solid yellow;
 }
 .poster {
-  color: mediumvioletred;
+  color: oldlace;
   border-bottom: 0 dashed mediumvioletred;
 }
 .book {
-  color: greenyellow;
+  color: oldlace;
   border-bottom: 0 dotted greenyellow;
 }
 .identity {
-  color: blue;
+  color: oldlace;
   border-bottom: 0 double blue;
 }
 .other {
-  color: mediumslateblue;
+  color: oldlace;
   border-bottom: 0 solid mediumslateblue;
 }
 
@@ -196,7 +196,7 @@ a:hover, a:active {
 
 a#name {
     text-decoration: none;
-    color: midnightblue;
+    color: oldlace;
     border-bottom: 3px solid midnightblue;
 
 }
@@ -208,43 +208,49 @@ a#name:hover, a#name:active {
 }
 a.web {
   color: oldlace;
+  border-bottom: 3px solid yellow;
 }
 a.web:hover, a.web:active {
   text-decoration: none;
-  border-bottom: 3px solid yellow;
-  color: yellow;
+  border-bottom: 3px solid oldlace;
+  color: oldlace;
 }
 a.poster {
   color: oldlace;
+  border-bottom: 3px dashed mediumvioletred;
 }
 a.poster:hover, a.poster:active {
   text-decoration: none;
-  border-bottom: 3px dashed mediumvioletred;
-  color: mediumvioletred;
+  border-bottom: 3px dashed oldlace;
+  color: oldlace;
 }
 a.book {
   color: oldlace;
+  border-bottom: 3px dotted greenyellow;
 }
 a.book:hover, a.book:active {
   text-decoration: none;
-  border-bottom: 3px dotted greenyellow;
-  color: greenyellow;
+  border-bottom: 3px dotted oldlace;
+  color: oldlace;
 }
 a.identity {
   color: oldlace;
+  border-bottom: 3px double blue;
 }
 a.identity:hover, a.identity:active {
   text-decoration: none;
-  border-bottom: 3px double blue;
-  color: blue;
+  border-bottom: 3px double oldlace;
+  color: oldlace;
 }
 a.other {
   color: oldlace;
+  border-bottom: 3px solid mediumslateblue;
 }
+
 a.other:hover, a.other:active {
   text-decoration: none;
-  border-bottom: 3px solid mediumslateblue;
-  color: mediumslateblue;
+  border-bottom: 3px solid oldlace;
+  color: oldlace;
 }
 .img a {
   -webkit-transition: -webkit-filter 700ms ease;
