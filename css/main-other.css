@@ -288,7 +288,8 @@ a#name:hover, a#name:active {
 @media screen and (max-width: 420px) {
   h1 { font-size: 6vw; line-height: 1.5em }
   a { white-space: normal; }
-  #cat h1 {font-size: 4vw;}
+  #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: whitesmoke;}
+  #cat h1 {font-size: 4vw; text-align: center;}
   
 }
 
