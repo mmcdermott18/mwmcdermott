@@ -94,7 +94,7 @@
                     <span class="divide"> / </span> 
                     <span id="bookhover" href="">Book</span>
                     <span class="divide"> / </span> 
-                    <span id="otherhover" href="">Artworks!</span>
+                    <span id="otherhover" href="">Other</span>
                 </h1>
             </div>
         </div>
@@ -105,7 +105,39 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#webhover').click(function () {
-                    $('.web').toggleClass('active');
+                    $('.web').toggleClass('activeweb');
+                    $('.poster').removeClass('activeposter');
+                    $('.identity').removeClass('activebook');
+                    $('.book').removeClass('activeidentity');
+                    $('.other').removeClass('activeother');
+                });
+                $('#posterhover').click(function () {
+                    $('.web').removeClass('activeweb');
+                    $('.poster').toggleClass('activeposter');
+                    $('.identity').removeClass('activebook');
+                    $('.book').removeClass('activeidentity');
+                    $('.other').removeClass('activeother');
+                });
+                $('#identityhover').click(function () {
+                    $('.web').removeClass('activeweb');
+                    $('.poster').removeClass('activeposter');
+                    $('.identity').toggleClass('activebook');
+                    $('.book').removeClass('activeidentity');
+                    $('.other').removeClass('activeother');
+                });
+                $('#bookhover').click(function () {
+                    $('.web').removeClass('activeweb');
+                    $('.poster').removeClass('activeposter');
+                    $('.identity').removeClass('activebook');
+                    $('.book').toggleClass('activeidentity');
+                    $('.other').removeClass('activeother');
+                });
+                $('#otherhover').click(function () {
+                    $('.web').removeClass('activeweb');
+                    $('.poster').removeClass('activeposter');
+                    $('.identity').removeClass('activebook');
+                    $('.book').removeClass('activeidentity');
+                    $('.other').toggleClass('activeother');
                 });
             });
          </script>
