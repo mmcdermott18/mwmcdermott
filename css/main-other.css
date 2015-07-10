@@ -122,20 +122,20 @@ h1 {
     letter-spacing: .1em;
     font-size: 2.9vw;
     font-weight: 300;
-    color: aliceblue;
+    color: oldlace;
 }
 .head {
-  color: aliceblue;
+  color: oldlace;
 }
 .years {
   color: darkturquoise;
-  background-color: mediumvioletred;
+  background-color: oldlace;
   padding: 0 4px;
   font-weight: 900;
 }
 
 .divide {
-  color: aliceblue;
+  color: oldlace;
   font-weight: 900;
 }
 
@@ -161,13 +161,13 @@ a {
 
 a:hover, a:active {
     text-decoration: none;
-    border-bottom: 3px solid aliceblue;
-    color: aliceblue;
+    border-bottom: 3px solid oldlace;
+    color: oldlace;
 }
 
 a#name {
     text-decoration: none;
-    color: aliceblue;
+    color: oldlace;
 }
 
 a#name:hover, a#name:active {
