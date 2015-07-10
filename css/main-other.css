@@ -291,8 +291,9 @@ a#name:hover, a#name:active {
 @media screen and (max-width: 420px) {
   h1 { font-size: 6vw; line-height: 1.5em }
   a { white-space: normal; }
-  #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: whitesmoke;}
-  #cat h1 {font-size: 16px; text-align: center;}
+  #cat {width: 100%; position: fixed; bottom: 0; left: 0; background-color: darkturquoise;}
+  #cat h1 {font-size: 16px; text-align: center; color: whitesmoke;}
+  #cat .divide { color: whitesmoke;}
   
 }
 
