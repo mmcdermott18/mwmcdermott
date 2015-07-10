@@ -225,7 +225,7 @@ h1 {
 }
 
 .divide {
-  color: darkturquoise;
+  color: whitesmoke;
   font-weight: 400;
   /*display: none;*/
 }
@@ -240,7 +240,7 @@ p {
 
 a {
     text-decoration: none;
-    color: darkgrey;
+    color: whitesmoke;
     /*background-color: oldlace;*/
     padding: 0 5px;
     white-space: nowrap;
