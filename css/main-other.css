@@ -100,6 +100,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 #container {
     width: 90%;
     margin: 0 auto;
@@ -167,11 +171,6 @@ body {
 }
 
 #title p {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 300;
   text-align: center;
   margin: .4em 0;
   
@@ -202,6 +201,12 @@ body {
 }
 .full {
   margin: 0 0 1% 0;
+  clear: both;
+}
+.half {
+  width: 49%;
+  margin: 0 .5% 1% .5%; 
+  float: left;
 }
 img {
   max-width: 100%;
@@ -225,7 +230,7 @@ h1 {
 }
 
 .divide {
-  color: whitesmoke;
+  color: darkturquoise;
   font-weight: 400;
   /*display: none;*/
 }
@@ -238,9 +243,35 @@ p {
     margin: 4px 0;
 }
 
+#title p a {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 300;
+}
+
+#title p a:hover, #title p a:active {
+  color: black;
+  border-bottom: 2px solid black;
+} 
+
+p a {
+  color: black;
+  border-bottom: 2px solid black;
+  padding: 0;
+}
+
+p a:hover, p a:active {
+  color: darkturquoise;
+  border-bottom: 2px solid darkturquoise;
+  padding: 0;
+}
+
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: darkgrey;
     /*background-color: oldlace;*/
     padding: 0 5px;
     white-space: nowrap;
