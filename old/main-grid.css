@@ -195,13 +195,14 @@ p {
   margin: 0;
 }
 
-.title a {
-  color: white;
+a img {
+  -webkit-transition: all .7s ease;
 }
-.title a:hover, .title a:active {
-  
+a:hover img, a:active img {
+  /*-webkit-transform: rotate(360deg);*/
+  -webkit-filter: hue-rotate(360deg);
+  /*max-width: 180%;*/
 }
-
 
 
 .notactive {-webkit-filter: grayscale(100%); opacity: .2;}
