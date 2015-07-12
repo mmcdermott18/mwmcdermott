@@ -194,46 +194,29 @@
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
         <script type="text/javascript">
-        $(document).ready(function () { 
-            $(function(){
-                centerImageVertically();            
+        // $(document).ready(function () { 
+            $(window).load(function(){
+                centerImage();            
                 $(window).resize(function() {
-                    centerImageVertically();            
+                    centerImage();            
                 });
-                function centerImageVertically() {
+                function centerImage() {
                     var imgframes = $('img');
                         imgframes.each(function(i){
                             var imgVRelativeOffset = ($(this).height() - $(this).parent().height()) / 2;
                             var top = imgVRelativeOffset * -1;
+                            var imgHRelativeOffset = ($(this).width() - $(this).parent().width()) / 2;
+                            var left = imgHRelativeOffset * -1;
+                            console.log('top - ' + top + ' left - ' + left);
                             $(this).css({
                                 'position': 'absolute',
                                 'top': top,
-                            });
-                        });
-                }
-            });
-        });
-        </script>
-        <script type="text/javascript">
-        $(document).ready(function () { 
-            $(function(){
-                centerImageHorizontally();            
-                $(window).resize(function() {
-                    centerImageHorizontally();            
-                });
-                function centerImageHorizontally() {
-                    var imgframes = $('img');
-                        imgframes.each(function(i){
-                            var imgHRelativeOffset = ($(this).width() - $(this).parent().width()) / 2;
-                            var left = imgHRelativeOffset * -1;
-                            $(this).css({
-                                'position': 'absolute',
                                 'left': left,
                             });
                         });
                 }
             });
-        });
+        // });
         </script>
         <script type="text/javascript">
             $(document).ready(function () {
