@@ -120,7 +120,7 @@ header {
   float: right;
 }
 
-#cat {
+#cat, #nav {
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -184,7 +184,7 @@ h1 {
   font-weight: 900;
 }
 
-#cat h1 {
+#cat h1, #nav h1 {
   font-weight: 300;
 }
 

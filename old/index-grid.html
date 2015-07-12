@@ -27,28 +27,28 @@
             <div id="headright">
                 <div id="cat">
                     <h1>
-                        <span id="allhover">All</span>
+                        <span class="allhover">All</span>
                         <span class="divide"> / </span> 
-                        <span id="webhover">Web</span>
+                        <span class="webhover">Web</span>
                         <span class="divide"> / </span> 
-                        <span id="posterhover">Poster</span>
+                        <span class="posterhover">Poster</span>
                         <span class="divide"> / </span> 
-                        <span id="identityhover">Identity</span>
+                        <span class="identityhover">Identity</span>
                         <span class="divide"> / </span> 
-                        <span id="bookhover">Book</span>
+                        <span class="bookhover">Book</span>
                         <span class="divide"> / </span> 
-                        <span id="otherhover">Other</span>
+                        <span class="otherhover">Other</span>
                     </h1>
                 </div>
                 <div id="nav">
                     <button></button>
                     <div>
-                        <h1><span id="allhover">All</span></h1>
-                        <h1><span id="webhover">Web</span></h1>
-                        <h1><span id="posterhover">Poster</span></h1>
-                        <h1><span id="identityhover">Identity</span></h1>
-                        <h1><span id="bookhover">Book</span></h1>
-                        <h1><span id="otherhover">Other</span></h1>
+                        <h1><span class="allhover">All</span></h1>
+                        <h1><span class="webhover">Web</span></h1>
+                        <h1><span class="posterhover">Poster</span></h1>
+                        <h1><span class="identityhover">Identity</span></h1>
+                        <h1><span class="bookhover">Book</span></h1>
+                        <h1><span class="otherhover">Other</span></h1>
                     </div>
                 </div>
             </div>
@@ -238,47 +238,53 @@
         </script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $('#allhover').click(function () {
+                $('.allhover').click(function () {
                     $('.web').removeClass('notactive');
                     $('.poster').removeClass('notactive');
                     $('.identity').removeClass('notactive');
                     $('.book').removeClass('notactive');
                     $('.other').removeClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle();                    
                 });
-                $('#webhover').click(function () {
+                $('.webhover').click(function () {
                     $('.web').removeClass('notactive');
                     $('.poster').addClass('notactive');
                     $('.identity').addClass('notactive');
                     $('.book').addClass('notactive');
                     $('.other').addClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle(); 
                 });
-                $('#posterhover').click(function () {
+                $('.posterhover').click(function () {
                     $('.web').addClass('notactive');
                     $('.poster').removeClass('notactive');
                     $('.identity').addClass('notactive');
                     $('.book').addClass('notactive');
                     $('.other').addClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle(); 
                 });
-                $('#identityhover').click(function () {
+                $('.identityhover').click(function () {
                     $('.web').addClass('notactive');
                     $('.poster').addClass('notactive');
                     $('.identity').removeClass('notactive');
                     $('.book').addClass('notactive');
                     $('.other').addClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle(); 
                 });
-                $('#bookhover').click(function () {
+                $('.bookhover').click(function () {
                     $('.web').addClass('notactive');
                     $('.poster').addClass('notactive');
                     $('.identity').addClass('notactive');
                     $('.book').removeClass('notactive');
                     $('.other').addClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle(); 
                 });
-                $('#otherhover').click(function () {
+                $('.otherhover').click(function () {
                     $('.web').addClass('notactive');
                     $('.poster').addClass('notactive');
                     $('.identity').addClass('notactive');
                     $('.book').addClass('notactive');
                     $('.other').removeClass('notactive');
+                    $('button').removeClass('expanded').siblings('div').slideToggle(); 
                 });
             });
         </script>
