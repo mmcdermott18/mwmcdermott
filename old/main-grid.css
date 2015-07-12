@@ -142,19 +142,31 @@ header {
   margin: .5% .5% 0 0;
   float: left;
   overflow: hidden;
+  /*background-color: darkgrey;*/
 }
 
 .img {
   width: 100%;
   height: 100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex; 
+  /*display:flex;*/
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
   overflow:hidden;
   position: relative;
 }
 
 .img img {
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
   flex-shrink:0;
   min-width:100%;
   min-height:100%;
@@ -197,15 +209,20 @@ p {
 
 a img {
   -webkit-transition: all .7s ease;
+  -mos-transition: all .7s ease;
+  transition: all .7s ease;
+  -webkit-backface-visibility: hidden;
+  -mos-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  -mos-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0) scale(1.0, 1.0);
 }
 a:hover img, a:active img {
-  /*-webkit-transform: rotate(360deg);*/
-  -webkit-filter: hue-rotate(360deg);
-  /*max-width: 180%;*/
+  opacity: .5;
 }
 
-
-.notactive {-webkit-filter: grayscale(100%); opacity: .2;}
+.notactive {-webkit-transition: all .7s ease; -webkit-filter: grayscale(100%); opacity: .2;}
 
 
 
