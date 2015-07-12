@@ -194,6 +194,46 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
+        $(document).ready(function () { 
+            $(function(){
+                centerImageVertically();            
+                $(window).resize(function() {
+                    centerImageVertically();            
+                });
+                function centerImageVertically() {
+                    var imgframes = $('.img img');
+                        imgframes.each(function(i){
+                            var imgVRelativeOffset = ($(this).height() - $(this).parent().height()) / 2;
+                            $(this).css({
+                                'position': 'absolute',
+                                'top': imgVRelativeOffset * (-1),
+                            });
+                        });
+                }
+            });
+        });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function () { 
+            $(function(){
+                centerImageHorizontally();            
+                $(window).resize(function() {
+                    centerImageHorizontally();            
+                });
+                function centerImageHorizontally() {
+                    var imgframes = $('.img img');
+                        imgframes.each(function(i){
+                            var imgHRelativeOffset = ($(this).width() - $(this).parent().width()) / 2;
+                            $(this).css({
+                                'position': 'absolute',
+                                'left': imgHRelativeOffset * (-1),
+                            });
+                        });
+                }
+            });
+        });
+        </script>
+        <script type="text/javascript">
             $(document).ready(function () {
                 $('#allhover').click(function () {
                     $('.web').removeClass('notactive');
