@@ -112,11 +112,11 @@ header {
   background-color: rgba(255,255,255,1);
 }
 
-#headleft {
+#headleft, #headleftinside {
   float: left;
 }
 
-#headright {
+#headright, #headrightinside {
   float: right;
 }
 
@@ -184,12 +184,17 @@ h1 {
   font-weight: 900;
 }
 
-#cat h1, #nav h1 {
+#cat h1, #nav h1, #pagetext h1 {
   font-weight: 300;
 }
 
 p {
   margin: 0;
+}
+
+.project {
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 a img {
@@ -207,9 +212,21 @@ a:hover img, a:active img {
   opacity: .5;
 }
 
+header a, header a:visited { 
+  color: black; 
+  text-decoration: none; 
+}
+header a:hover, header a:active { 
+  text-decoration: none; 
+  border-bottom: 3px solid black; 
+}
+#page a:hover, #page a:active {
+  border: 0;
+}
+
 .notactive {-webkit-transition: all .7s ease; -webkit-filter: grayscale(100%); opacity: .2;}
 
-
+/* ------ Mobile Menu ------- */
 #nav {
   display: none;
   position: fixed;
@@ -246,6 +263,8 @@ a:hover img, a:active img {
   display: block;
   top: 40px;
 }
+
+#page {display: none;}
 
 
 /* ==========================================================================
@@ -327,40 +346,41 @@ a:hover img, a:active img {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width: 1800px) {
-
-}
-
-@media screen and (max-width: 1000px) {
-
-}
-
-@media screen and (max-width: 900px) {
-
-}
-
 @media screen and (max-width: 950px) {
   .work { width: 24%; margin: 1% 1% 0 0; }
-  header { width: 98%; height: 35px; margin: 0 1%;}
-  header h1 { font-size: 1em;}
-  #container { width: 99%; margin: 35px 0 0 1%;}
+  header { width: 98%; height: 45px; margin: 0 1%;}
+  header h1 { font-size: 1.2em;}
+  #container { width: 99%; margin: 45px 0 0 1%;}
+  #imagecontainer {width: 49%; margin: 2% 1% 0 0; float: right;}
+  #text {width: 47%; position: fixed; top: 45px; left: 1%; margin: 2% 3% 0 0;}
+  .full {width: 100%; margin: 0 0 1% 0;}
+  .full img { max-width: 100%;}
 }
 
 @media screen and (max-width: 675px) {
   .work { width: 49%; margin: 1% 1% 0 0; }
   header { width: 98%; height: 40px; margin: 0 1%;}
   header h1 { font-size: 1em;}
-  #cat h1 { font-size: .8em; line-height: .8em;}
   #headright {float: none;}
   #headleft { float: none;}
+  #cat h1, { font-size: .8em; line-height: .8em;}
   #container { width: 99%; margin: 40px 0 0 1%;}
   #nav { display: block; background-color: white; }
   #cat { display: none; }
-
+  #imagecontainer {width: 99%; margin: 4% 1% 0 0; float: none;}
+  #text {width: 100%; position: static; margin: 4% 1% 0 0;}
+  .full img {max-width: 100%; margin: 0 0 1% 0;}
 }
 
-@media screen and (max-width: 320px) {
-  #cat h1 { font-size: .7em;}
+@media screen and (max-width: 475px) {
+  #pagetext {display: none;}
+  #page { display: block; float: left;}
+  #container { width: 99%; margin: 45px 0 0 1%;}
+  #imagecontainer {width: 99%; margin: 4% 1% 0 0;}
+  .full img {max-width: 100%; margin: 0 0 1% 0;}
+  header {height: 45px;}
+  header h1 {font-size: 1.1em; }
+  #page h1 {font-size: 1.2em}
 }
 
 @media print,
