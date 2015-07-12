@@ -12,7 +12,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="main-grid.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -191,8 +191,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
         <script type="text/javascript">
         $(document).ready(function () { 
             $(function(){
@@ -201,12 +201,13 @@
                     centerImageVertically();            
                 });
                 function centerImageVertically() {
-                    var imgframes = $('.img img');
+                    var imgframes = $('img');
                         imgframes.each(function(i){
                             var imgVRelativeOffset = ($(this).height() - $(this).parent().height()) / 2;
+                            var top = imgVRelativeOffset * -1;
                             $(this).css({
                                 'position': 'absolute',
-                                'top': imgVRelativeOffset * (-1),
+                                'top': top,
                             });
                         });
                 }
@@ -221,12 +222,13 @@
                     centerImageHorizontally();            
                 });
                 function centerImageHorizontally() {
-                    var imgframes = $('.img img');
+                    var imgframes = $('img');
                         imgframes.each(function(i){
                             var imgHRelativeOffset = ($(this).width() - $(this).parent().width()) / 2;
+                            var left = imgHRelativeOffset * -1;
                             $(this).css({
                                 'position': 'absolute',
-                                'left': imgHRelativeOffset * (-1),
+                                'left': left,
                             });
                         });
                 }
