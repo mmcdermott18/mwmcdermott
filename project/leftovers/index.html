@@ -31,12 +31,12 @@
                         <span class="divide"> / </span> 
                         <a href="../../index.html">Home</a>
                         <span class="divide"> / </span> 
-                        <a href="../studies/index.html">Next</a>
+                        <a href="../ours/index.html">Next</a>
                     </h1>
                 </div>
                 <div id="page">
                     <div>
-                        <h1><a href="../rye/index.html">&#60;</a>&ensp;<a href="../../index.html">&#8962;</a>&ensp;<a href="../studies/index.html">&#62;</a></h1>
+                        <h1><a href="../rye/index.html">&#60;</a>&ensp;<a href="../../index.html">&#8962;</a>&ensp;<a href="../ours/index.html">&#62;</a></h1>
                     </div>
                 </div>
             </div>
@@ -45,13 +45,43 @@
             <div id="text">
                 <div class="description">
                     <p class="project">Leftovers</p>
-                    </p>
+                    <p>The screen printing studio at RISD is full of screens that were left and forgotten about. These posters and the accompanying book document that site and the material remains, screens, the site provided me.</p>
+                    <p>The posters aesthetic is influenced by make readies in the print industry. Make readies are the results a technical process of preparing the presses for the final print run. They allow color, registration and a variety of other issues to be checked prior to the final printing. Typically the sheets are fed through the presses multiple times allowing layers to build up over time. Another influence was French poster designer Vincent Perrottet and his posters that use the visual language of make readies. </p>
+                    <p>Each poster is a part in a story that is told only through uncovering the history behind each screen. I documented each screen I used and the name or lack of name on each screen. I used the name to search for the person and tried to find the project the screen was originally intended for. I also emailed the people if I could find an email for the person. This research formed a book that used Taryn Simon’s <i>A Living Man Declared Dead</i> as inspiration for the method of documentation.</p>
+                    <p>The project began without any end goal in mind. This book is a result of the process not a determined outcome. Tracing the lineage of each poster backwards, from the screen to the person who made the screen, brings out a history that is not visible by just showing the posters themselves.</p>
                 </div>
             </div>
             <div id="imagecontainer">
             <div id="images">
+                <div class="halfc">
+                    <img src="img/7.jpg">
+                </div>
+                <div class="halfl">
+                    <img src="img/8.jpg">
+                </div>
+                <div class="halfr">
+                    <img src="img/9.jpg">
+                </div>
                 <div class="full">
+                    <img src="img/6.jpg">
+                </div>
+                <div class="full">
+                    <img src="img/2.jpg">
+                </div>
+                <div class="halfl">
                     <img src="img/1.jpg">
+                </div>
+                <div class="halfr">
+                    <img src="img/3.jpg">
+                </div>
+                <div class="halfl">
+                    <img src="img/4.jpg">
+                </div>
+                <div class="halfr">
+                    <img src="img/5.jpg">
+                </div>
+                <div class="youtube-container">
+                    <div class="youtube-player" data-id="tdfHVH3-vUY"></div>
                 </div>
             </div>
             </div>
@@ -61,6 +91,29 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
         <script src="../../js/main.js"></script>
+        <script>
+            (function() {
+                var v = document.getElementsByClassName("youtube-player");
+                for (var n = 0; n < v.length; n++) {
+                    var p = document.createElement("div");
+                    p.innerHTML = labnolThumb(v[n].dataset.id);
+                    p.onclick = labnolIframe;
+                    v[n].appendChild(p);
+                }
+            })();
+             
+            function labnolThumb(id) {
+                return '<img class="youtube-thumb" src="http://i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+            }
+             
+            function labnolIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("id", "youtube-iframe");
+                this.parentNode.replaceChild(iframe, this);
+            }
+            </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -27,7 +27,7 @@
             <div id="headrightinside">
                 <div id="pagetext">
                     <h1>
-                        <a href="../ours/index.html">Previous</a>
+                        <a href="../collection/index.html">Previous</a>
                         <span class="divide"> / </span> 
                         <a href="../../index.html">Home</a>
                         <span class="divide"> / </span> 
@@ -36,7 +36,7 @@
                 </div>
                 <div id="page">
                     <div>
-                        <h1><a href="../ours/index.html">&#60;</a>&ensp;<a href="../../index.html">&#8962;</a>&ensp;<a href="../books/index.html">&#62;</a></h1>
+                        <h1><a href="../collection/index.html">&#60;</a>&ensp;<a href="../../index.html">&#8962;</a>&ensp;<a href="../books/index.html">&#62;</a></h1>
                     </div>
                 </div>
             </div>
@@ -45,13 +45,24 @@
             <div id="text">
                 <div class="description">
                     <p class="project">Facebook Book</p>
-                    </p>
+                    <p><i>Facebook Book</i> uses the knowledge gained in <a href="../important/index.html"><i>!Important</i></a> and applies it to a more specific context. The project uses the popular social networking site Facebook.com as the source material and inserts a new block of code into the css.<p>
+                    <code>
+                    *{<br>
+                        &emsp;&emsp;color: black !important;<br>
+                        &emsp;&emsp;font-size: 1000px !important;<br>
+                        &emsp;&emsp;letter-spacing: 1em !important;<br>
+                    }
+                    </code>
+                    <p>These changes altered the home page for a signed-in user from a single, scrollable page to an almost 1500 page letter sized book. The text from the website, while abstract initially, begins to sequence to form legible language further into the book. After the initial changes resolve, each page of the book has a letter or two displayed and the statuses and comments from the original site can be read. The final output of the book form also influenced the selection of the website. Facebook is based around images and text which is also the content books are built with. Facebook is also constantly being updated by its users so the book is also a fragment of a tin portion of Facebook’s life.</p>
                 </div>
             </div>
             <div id="imagecontainer">
             <div id="images">            
                 <div class="full">
                     <img src="img/1.jpg">
+                </div>
+                <div class="youtube-container">
+                    <div class="youtube-player" data-id="3rru3rXUDlg"></div>
                 </div>
             </div>
             </div>
@@ -61,6 +72,29 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
         <script src="../../js/main.js"></script>
+        <script>
+            (function() {
+                var v = document.getElementsByClassName("youtube-player");
+                for (var n = 0; n < v.length; n++) {
+                    var p = document.createElement("div");
+                    p.innerHTML = labnolThumb(v[n].dataset.id);
+                    p.onclick = labnolIframe;
+                    v[n].appendChild(p);
+                }
+            })();
+             
+            function labnolThumb(id) {
+                return '<img class="youtube-thumb" src="http://i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+            }
+             
+            function labnolIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("id", "youtube-iframe");
+                this.parentNode.replaceChild(iframe, this);
+            }
+            </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

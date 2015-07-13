@@ -44,8 +44,8 @@
         <div id="container">
             <div id="text">
                 <div class="description">
-                    <p class="project">Jetset 1:1</p>
-                    </p>
+                    <p class="project">Jetset 1:1, A Cover Version by Michael McDermott</p>
+                    <p>This project is a cover version of Experimental Jetset's <a href="http://www.experimentaljetset.nl/archive/kelly1-1"><i>Kelly 1:1</i></a> which was a cover version of Ellsworth Kelly's <a href="http://www.guggenheim.org/new-york/collections/collection-online/artwork/2070"><i>Blue Green Yellow Orange Red</i></a>.</p>
                     <p><a href="http://www.jetset1to1.com">Visit the site</a></p>
                 </div>
             </div>
@@ -80,17 +80,9 @@
                         <img src="img/6.png">
                     </div>
                 </div>
-                <div id="images">
-                    <div class="halfl">
-                        <img src="img/7.jpg">
-                    </div>
+                <div class="youtube-container">
+                    <div class="youtube-player" data-id="6fZqISWwsvA"></div>
                 </div>
-                <div id="images">
-                    <div class="halfr">
-                        <img src="img/9.jpg">
-                    </div>
-                </div>
-                <p>Experimental Jetset's <i>Kelly 1:1</i> on the left and Ellsworth Kelly's <i>Blue Green Yellow Orange Red</i> on the right.</p>
             </div>
         </div>
 
@@ -98,6 +90,30 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
         <script src="../../js/main.js"></script>
+        <script>
+            (function() {
+                var v = document.getElementsByClassName("youtube-player");
+                for (var n = 0; n < v.length; n++) {
+                    var p = document.createElement("div");
+                    p.innerHTML = labnolThumb(v[n].dataset.id);
+                    p.onclick = labnolIframe;
+                    v[n].appendChild(p);
+                }
+            })();
+             
+            function labnolThumb(id) {
+                return '<img class="youtube-thumb" src="http://i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+            }
+             
+            function labnolIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("id", "youtube-iframe");
+                iframe.setAttribute("allowfullscreen","yes");
+                this.parentNode.replaceChild(iframe, this);
+            }
+            </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

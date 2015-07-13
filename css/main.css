@@ -163,10 +163,22 @@ header {
   float: left;
 }
 
-.full img, .halfr img, .halfl img { 
+.halfc {
+  width: 50%;
+  margin: 0 25% 1% 25%;
+}
+
+.border {
+  box-sizing: border-box;
+  border: 1px solid silver;
+}
+.full img, .halfr img, .halfl img, .halfc img { 
   max-width: 100%;
 }
 
+iframe {
+  width: 100%;
+}
 .work {
   width: 19.5%;
   height: 150px;
@@ -224,9 +236,13 @@ p {
 }
 
 .project {
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: .7px;
   text-transform: uppercase;
+}
+
+.description p {
+  margin-top: 10px;
 }
 
 a img {
@@ -333,6 +349,12 @@ header a:hover, header a:active {
   text-decoration: none;
 }
 
+/*-------------- youtube -------------*/
+.youtube-container { display: block; margin: 1% auto; width: 100%; max-width: 100%; }
+.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
+img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
+div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
+#youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
 /* ==========================================================================
    Helper classes
@@ -448,7 +470,7 @@ header a:hover, header a:active {
   header {height: 45px;}
   header h1 {font-size: 1.1em; }
   #page h1 {font-size: 1.2em}
-  .halfr, .halfl {float: none; width: 100%; margin: 0 0 1% 0;}
+  .halfr, .halfl, .halfc {float: none; width: 100%; margin: 0 0 1% 0;}
   #fouroh {font-size: 1em; width: 80%; margin-top: 10vh;}
 }
 

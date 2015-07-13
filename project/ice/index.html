@@ -45,16 +45,19 @@
             <div id="text">
                 <div class="description">
                     <p class="project">Ice Printing</p>
-                    </p>
+                    <p>An experiment with screen printing on ice.</p>
                 </div>
             </div>
             <div id="imagecontainer">
             <div id="images">
                 <div class="full">
-                    <img src="img/2.jpg">
-                </div>
-                <div class="full">
                     <img src="img/1.jpg">
+                </div>
+                <div class="youtube-container">
+                    <div class="youtube-player" data-id="uPxrq4jPqb8"></div>
+                </div>
+                <div class="halfc">
+                    <img src="img/2.jpg">
                 </div>
             </div>
             </div>
@@ -64,6 +67,29 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="../../js/plugins.js"></script>
         <script src="../../js/main.js"></script>
+        <script>
+            (function() {
+                var v = document.getElementsByClassName("youtube-player");
+                for (var n = 0; n < v.length; n++) {
+                    var p = document.createElement("div");
+                    p.innerHTML = labnolThumb(v[n].dataset.id);
+                    p.onclick = labnolIframe;
+                    v[n].appendChild(p);
+                }
+            })();
+             
+            function labnolThumb(id) {
+                return '<img class="youtube-thumb" src="http://i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+            }
+             
+            function labnolIframe() {
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("id", "youtube-iframe");
+                this.parentNode.replaceChild(iframe, this);
+            }
+            </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
