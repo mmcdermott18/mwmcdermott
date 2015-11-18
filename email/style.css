@@ -1,9 +1,24 @@
 * {margin: 0; padding: 0;}
 
 .container {
-	width: 600px;
+	width: 500px;
 	margin: 0 auto;
 }
 img {
 	float: left;
+	max-width: 100%;
+}
+
+nav img {
+	max-width: calc(100%/8);
+}
+
+nav img.edge {
+	max-width: calc(100%/16);
+}
+
+@media screen and (max-width: 475px) {
+	.container {
+		width: 95%;
+	}
 }
