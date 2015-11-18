@@ -17,7 +17,7 @@ nav img.edge {
 	max-width: calc(100%/16);
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 600px) {
 	.container {
 		width: 95%;
 	}
