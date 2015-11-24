@@ -4,6 +4,11 @@
 	/*font-size: 16px;*/
 	font-family: 'Lato', sans-serif;
 }
+em {
+	font-weight: 700;
+	font-size: .9em;
+	font-style: normal;
+}
 body {
 	margin: 0;
 }
@@ -26,7 +31,7 @@ header {
 	margin: 0;
 }
 #hero {
-	
+
 }
 header.inside {
 	height: 100px;
