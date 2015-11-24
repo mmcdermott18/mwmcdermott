@@ -18,12 +18,15 @@ header {
 	/*border-bottom: 1px solid black;*/
 	position: relative;
 	top: 0;
-	background: url(../img/main.jpg) no-repeat center center; 
+	background: url(../img/main1.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	margin: 0;
+}
+#hero {
+	
 }
 header.inside {
 	height: 100px;

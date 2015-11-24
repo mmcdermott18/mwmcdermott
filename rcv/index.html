@@ -5,9 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,700italic,900italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-	<header>
+	<header id="hero">
 		<div id="headlogo">
 			<div class="textbox">
 				<h1 class="oneline">The Raptor</h1>
@@ -85,5 +86,9 @@
 			<p>&copy; The Raptor Conservancy of Virginia 2015 // Site designed and maintained by dsir</p>
 		</footer>
 	</div>
+	<script type="text/javascript">
+ 		var images = ['main1.jpg', 'main2.jpg', 'main3.jpg'];
+ 		$('#hero').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	</script>
 </body>
 </html>
