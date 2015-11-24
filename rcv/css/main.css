@@ -1,0 +1,146 @@
+* {
+	border-sizing: border-box;
+	/*font-size: 16px;*/
+	font-family: 'Lato', sans-serif;
+}
+body {
+	margin: 0;
+}
+#container {
+	width: 90vw;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+header {
+	width: 100%;
+	height: 90vh;
+	/*border-bottom: 1px solid black;*/
+	position: relative;
+	top: 0;
+	background: url(../img/main.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0;
+}
+#headlogo {
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+#headlogo h1 {
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+	color: white;
+}
+.textbox {
+	padding-top: 30vh;
+}
+.oneline, .twoline, .threeline {
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: .1em;
+}
+#headlogo h1.twoline {
+	font-size: 5.5em;
+}
+.clearfix {
+	clear: both;
+}
+nav {
+	width: 772px;
+	margin: 20px auto;
+	padding-bottom: 15px;
+	border-bottom: 1px solid grey;
+}
+nav .button {
+	padding: 0 20px;
+	margin: 0;
+	float: left;
+	border-bottom: 1px solid white
+}
+nav .button:hover {
+	border-bottom: 1px solid grey;
+}
+nav .button p {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: .2em;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav a:hover {
+
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 2em;
+	text-align: center;
+}
+.reg {
+	font-style: normal;
+}
+.center {
+	text-align: center;
+}
+h4 {
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 0;
+	font-size: .8em;
+}
+.main {
+	margin: 50px 0
+}
+.main .col {
+	width: 30%;
+	float: left;
+}
+.col.left {
+	margin-right: 5%;
+}
+.col.right {
+	margin-left: 5%;
+}
+p {
+	font-weight: 300;
+	font-size: 16px;
+}
+footer {
+	width: 534px;
+	margin: 50px auto;
+}
+footer .button {
+	padding: 0 20px;
+	margin: 0;
+	float: left;
+}
+footer .button p {
+	font-size: .6em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: .2em;
+}
+footer p {
+	font-size: .6em;
+	text-align: center;
+	font-weight: 300;
+	line-height: .2em;
+}
+footer a {
+	text-decoration: none;
+	color: grey;
+	-webkit-transition: color 500ms ease;
+}
+footer a:hover {
+	color: black;
+}
