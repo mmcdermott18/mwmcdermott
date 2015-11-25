@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>The Raptor Conservancy of Virginia</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,700italic,900italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,100,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+	<!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 	<header class="inside">
 		<div id="headlogo">
 			<div class="insidetextbox">
@@ -109,11 +116,11 @@
 	      //.log to determine when you want the 
 	      //nav bar to stick.  
 	     	console.log($('#navbar').outerHeight(true))
-    		if ($(window).scrollTop() > 120) {
+    		if ($(window).scrollTop() > 100) {
       			$('#navbar').addClass('navbar-fixed');
       			$('#content').addClass('navbar-fix')
     		}
-    		if ($(window).scrollTop() < 121) {
+    		if ($(window).scrollTop() < 101) {
       			$('#navbar').removeClass('navbar-fixed');
       			$('#content').removeClass('navbar-fix')
     		}

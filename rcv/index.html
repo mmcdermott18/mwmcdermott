@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>The Raptor Conservancy of Virginia</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,700italic,900italic,400italic,300italic,100italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,100,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+	<!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 	<header id="hero">
 		<div id="headlogo">
-			<div class="textbox">
+			<div id="textbox">
 				<h1 class="oneline">The Raptor</h1>
 				<h1 class="twoline">Conservancy</h1>
-				<h1 class="threeline">of Virgina</h1>
+				<h1 class="oneline">of Virgina</h1>
 			</div>
 		</div>
 	</header>
 	<div id="container">
-		<nav>
-			<div class="navbox">
+		<nav id="navbar">
+			<div id="navbox">
 				<div class="button active">
 					<p>Home</p>
 				</div>
@@ -89,6 +97,25 @@
 	<script type="text/javascript">
  		var images = ['main1.jpg', 'main2.jpg', 'main3.jpg'];
  		$('#hero').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var h1 = $('#hero').height();
+  		var h2 = $('#textbox').height();
+  		var h3 = ((h1 -h2) /2);
+  		var w1 = $('#navbox').width();
+  		console.log(h1)
+  		console.log(h2)
+  		console.log(h3)
+  		console.log(w1)
+  		$('#textbox').css( "padding-top", h3 );
+	  	$(window).resize(function () {
+	  		var h1 = $('#hero').height();
+	  		var h2 = $('#textbox').height();
+	  		var h3 = ((h1 -h2) /2);
+  			$('#textbox').css( "padding-top", h3 );
+	  	});
+	});
 	</script>
 </body>
 </html>
