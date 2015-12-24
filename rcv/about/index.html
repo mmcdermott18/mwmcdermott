@@ -16,7 +16,7 @@
 	<!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-	<header class="inside">
+	<header id="insideHead">
 		<div id="headlogo">
 			<div class="insidetextbox">
 				<h1 class="insidename">The Raptor Conservancy of Virginia</h1>
@@ -55,8 +55,29 @@
 				<div class="clearfix"></div>
 			</div>
 			<div id="navmobile">
-				<div class="button">
+				<div id="menuToggle" class="button">
 					<p>Menu</p>
+				</div>
+				<div id="expandableMenu">
+					<div class="button">
+						<p><a href="about/index.html">About RCV</a></p>
+					</div>
+					<div class="button">
+						<p><a href="#">Birds</a></p>
+					</div>
+					<div class="button">
+						<p><a href="#">Help RCV</a></p>
+					</div>
+					<div class="button">
+						<p><a href="#">In the News</a></p>
+					</div>
+					<div class="button">
+						<p><a href="#">Gallery</a></p>
+					</div>
+					<div class="button">
+						<p><a href="#">Donate</a></p>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</nav>
@@ -76,7 +97,9 @@
 				<p><a href="http://www.brownbearsw.com/cal/rcvcalendar">Go to RCV Events Calendar</a></p>
 			</div>
 			<div class="col left">
-				<img class="singleimg" src="../img/vertical.jpg">
+				<div class="singleimg">
+					<img src="../img/vertical.jpg">
+				</div>
 				<h4>Requested Educational Program Donations</h4>
 				<p>Presentation subjects are flexible, and include:</p>
 					<ul>
@@ -120,17 +143,18 @@
 	</div>
 	<script type="text/javascript">
 	$(document).ready(function() {
-
+		var v1 = $('#insideHead').height();
 	  	$(window).scroll(function () {
 	      //if you hard code, then use console
 	      //.log to determine when you want the 
 	      //nav bar to stick.  
+	      	console.log(v1)
 	     	console.log($('#navbar').outerHeight(true))
-    		if ($(window).scrollTop() > 200) {
+    		if ($(window).scrollTop() > v1) {
       			$('#navbar').addClass('navbar-fixed');
       			$('#content').addClass('navbar-fix')
     		}
-    		if ($(window).scrollTop() < 201) {
+    		if ($(window).scrollTop() < (v1+1)) {
       			$('#navbar').removeClass('navbar-fixed');
       			$('#content').removeClass('navbar-fix')
     		}
@@ -155,6 +179,13 @@
   			$('#insidemobile').css( "padding-top", h3 );
 	  	});
 	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	  		$("#menuToggle").click(function(){
+			    $("#expandableMenu").toggle();
+			});
+	  	});
 	</script>
 </body>
 </html>

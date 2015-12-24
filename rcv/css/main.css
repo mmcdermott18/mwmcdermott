@@ -179,7 +179,7 @@ header {
   font-size: 5.5em;
 }
 /* ---- inside header styles ---- */
-header.inside {
+#insideHead {
   height: 200px;
 }
 #headlogo h1.insidename {
@@ -439,7 +439,7 @@ footer a:hover {
     float: none;
     padding: 0 20px;
     margin: 0 auto;
-    width: 25%;
+    width: 75%;
   }
   nav #navmobile.button {
     padding: 0 20px;
@@ -449,8 +449,19 @@ footer a:hover {
     text-align: center;
     border-bottom: 1px solid white;
   }
+
+  nav #expandableMenu {
+    display: none;
+  }
+  nav .active {
+    border-bottom: 1px solid white;
+  }
+  nav .button:hover {
+    border-bottom: 1px solid white;
+  }
+
   /* ---- inside header styles ---- */
-  header.inside {
+  #insideHead {
     height: 200px;
   }
   #headlogo h1.insidename {
@@ -511,6 +522,11 @@ footer a:hover {
     text-align: center;
     font-weight: 300;
     line-height: 1.3em;
+  }
+  /* ---- img nav ---- */
+  .singleimg {
+    width: 50%;
+    margin: 15px auto;
   }
 }
 
