@@ -418,7 +418,7 @@ footer a:hover {
   }
   .oneline, .twoline {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: .1em;
   }
   #headlogo h1.twoline {
