@@ -180,7 +180,7 @@ header {
 }
 /* ---- inside header styles ---- */
 header.inside {
-  height: 100px;
+  height: 200px;
 }
 #headlogo h1.insidename {
   font-size: 2.7em;
@@ -191,9 +191,11 @@ header.inside {
   letter-spacing: .1em; 
 }
 .insidetextbox {
-  padding-top: 20px;
+  padding-top: 70px;
 }
-
+#insidemobile {
+  display: none;
+}
 /* ---- nav styles ---- */
 nav {
   width: 100%;
@@ -231,6 +233,9 @@ nav a:link, nav a:visited {
 nav a:hover {
 	color: black;
 }
+ #navmobile {
+    display: none;
+  }
 /* ---- fixed nav styles ---- */
 .navbar-fixed {
     top: 0;
@@ -266,7 +271,8 @@ nav a:hover {
   margin-left: 5%;
 }
 .coldouble{
-  width: 65%;
+  width: 60%;
+  padding-right: 5%;
   float: left;
 }
 .coldouble h2 {
@@ -399,7 +405,113 @@ footer a:hover {
    Modify as content requires.
    ========================================================================== */
 @media screen and (max-width: 750px) {
-  
+
+  /* ---- header type ---- */
+  #headlogo h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    color: white;
+  }
+  #textbox {
+    /*padding-top: 25vh;*/
+  }
+  .oneline, .twoline {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .1em;
+  }
+  #headlogo h1.twoline {
+    font-size: 2.3em;
+  }
+
+  /* ---- nav ---- */
+  #navbox {
+    display: none;
+    width: 775px;
+    margin: 0 auto;
+  }
+  #navmobile {
+    display: inline-block;
+    width: 100%;
+  }
+  nav .button {
+    float: none;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 25%;
+  }
+  nav #navmobile.button {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 25%;
+    font-size: 1em;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  /* ---- inside header styles ---- */
+  header.inside {
+    height: 200px;
+  }
+  #headlogo h1.insidename {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1em; 
+  }
+  .insidetextbox {
+    display: none;  
+  }
+  #insidemobile {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  /* ---- main body ---- */
+  .main {
+    margin-bottom: 0px;
+  }
+  /* ---- columns ---- */
+  .main .col {
+    width: 100%;
+    float: left;
+  }
+  .col.left {
+    margin: 5% 0;
+  }
+  .col.right {
+    margin: 5% 0;
+  }
+  .coldouble{
+    width: 100%;
+    float: left;
+  }
+  /* ---- footer nav ---- */
+  footer {
+    width: 100%;
+    margin: 15px auto;
+    border-top: solid 1px grey;
+  }
+  footer .button {
+    padding: 0 20px;
+    margin: 10px 0;
+    float: none;
+  }
+  footer .button p {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+  footer p {
+    font-size: .6em;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.3em;
+  }
 }
 
 @media print,
