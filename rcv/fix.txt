@@ -5,6 +5,11 @@ X - Main nav on inbetween screen size
 _ - Visible Donate & Adopt Button
 _ - Make all pages
 X - Social icons
+_ - Bird page
+	X - Randomize order
+	X - Filters
+	_ - Individual bird pages?
+	_ - Get photos of all birds
 
 
 <---- General Suggestions ---->

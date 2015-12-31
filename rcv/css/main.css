@@ -256,7 +256,7 @@ nav a:hover {
 }
 /* ---- bird nav styles ---- */
 #birdnav {
-  width: 463px;
+  width: 379px; /*463px*/
   margin: 0 auto 10px;
 }
 
@@ -269,8 +269,15 @@ nav a:hover {
   text-transform: uppercase;
   font-size: .7em;
 }
-#birdnav .button p a {
+.randombutton {
   text-decoration: none;
+  color: black;
+  border-bottom: 1px solid grey;
+}
+.randombutton:hover{
+  text-decoration: none;
+  color: royalblue; 
+  border-bottom: 1px solid royalblue;
 }
 
 /* ---- main styles ---- */
@@ -327,9 +334,6 @@ nav a:hover {
   margin: 1.5%;
 }
 .notactive {
-  display: none;
-}
-#randomOrder {
   display: none;
 }
 
@@ -619,12 +623,12 @@ footer a:hover {
   }
   /* ---- bird nav styles ---- */
 #birdnav {
-  width: 283px;
+  width: 309px; /*283px*/
   margin: 0 auto;
 }
 #birdnav .button {
   float: left;
-  padding: 0 5px;
+  padding: 0 13px; /*0 5px*/
 }
 #birdnav .button p {
   text-transform: uppercase;
