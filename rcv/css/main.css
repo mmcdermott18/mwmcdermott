@@ -617,12 +617,12 @@ footer a:hover {
   }
   /* ---- bird nav styles ---- */
 #birdnav {
-  width: 343px;
+  width: 283px;
   margin: 0 auto;
 }
 #birdnav .button {
   float: left;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 #birdnav .button p {
   text-transform: uppercase;
