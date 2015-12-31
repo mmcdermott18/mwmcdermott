@@ -216,6 +216,7 @@ nav .button {
 }
 nav .active {
   border-bottom: 1px solid grey;
+  cursor: default;
 }
 nav .button:hover {
   border-bottom: 1px solid grey;
@@ -233,9 +234,12 @@ nav a:link, nav a:visited {
 nav a:hover {
 	color: black;
 }
- #navmobile {
-    display: none;
-  }
+#navmobile {
+  display: none;
+}
+.pointer {
+  cursor: pointer;
+}
 /* ---- fixed nav styles ---- */
 .navbar-fixed {
     top: 0;
@@ -321,6 +325,18 @@ footer a {
 footer a:hover {
   color: black;
 }
+#social {
+  width: 120px;
+  margin: 10px auto 30px;
+}
+#social img {
+  width: 20px;
+}
+#social .button {
+  padding: 0 10px;
+  margin: 0;
+  float: left;
+}
 
 /* ==========================================================================
    Helper classes
@@ -404,6 +420,50 @@ footer a:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (max-width: 1000px) {
+  .insidetextbox {
+    display: none;  
+  }
+   #insidemobile {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  #headlogo h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    color: white;
+  }
+  .oneline, .twoline {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .1em;
+  }
+  #headlogo h1.twoline {
+    font-size: 2.9em;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  #navbox {
+  width: 674px;
+  margin: 0 auto;
+}
+
+  nav .button {
+    padding: 0 13px;
+    margin: 0;
+    float: left;
+    border-bottom: 1px solid white
+  }
+  nav .active {
+    border-bottom: 1px solid grey;
+  }
+  .button p {
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 750px) {
 
   /* ---- header type ---- */
@@ -413,12 +473,9 @@ footer a:hover {
     margin: 0;
     color: white;
   }
-  #textbox {
-    /*padding-top: 25vh;*/
-  }
   .oneline, .twoline {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: .1em;
   }
   #headlogo h1.twoline {

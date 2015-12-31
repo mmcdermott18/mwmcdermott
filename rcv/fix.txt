@@ -1,0 +1,21 @@
+<---- To Do List ---->
+
+X - Main nav centering
+X - Main nav on inbetween screen size
+_ - Visible Donate & Adopt Button
+_ - Make all pages
+X - Social icons
+
+
+<---- General Suggestions ---->
+
+_ - Replace Gallery with Adopt a Raptor
+	The gallery can be the instagram link. And there will be good images on the Birds Page
+_ - Replace Help RCV with Volunteer
+	Help RCV page would be links to Volunteer/Donate/Adopt
+_ - Add Staff/Board/Volunteers page on about
+_ - Drop Related links?
+_ - Change "Birds" to something else:
+	Our Birds
+	Our Raptors
+

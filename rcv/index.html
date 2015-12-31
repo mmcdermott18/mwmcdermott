@@ -5,12 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>The Raptor Conservancy of Virginia</title>
 	<meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,100,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/vendor/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 	<!--[if lt IE 8]>
@@ -53,7 +54,7 @@
 			</div>
 			<div id="navmobile">
 				<div id="menuToggle" class="button">
-					<p>Menu</p>
+					<p class="pointer">Menu</p>
 				</div>
 				<div id="expandableMenu">
 					<div class="button">
@@ -120,6 +121,18 @@
 				<p><a href="#">Volunteer</a></p>
 			</div>
 			<div class="clearfix"></div>
+			<div id="social">
+				<div class="button">
+					<a href="https://www.instagram.com/raptorsva/"><img src="img/instagram.svg"></a>
+				</div>
+				<div class="button">
+					<a href="https://twitter.com/raptorsva"><img src="img/twitter.svg"></a>
+				</div>
+				<div class="button">
+					<a href="https://www.facebook.com/Raptorsva/"><img src="img/facebook.svg"></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
 			<p>&copy; The Raptor Conservancy of Virginia 2015 // Site designed and maintained by dsir</p>
 		</footer>
 	</div>
@@ -127,51 +140,8 @@
  		var images = ['main1.jpg', 'main2.jpg', 'main3.jpg'];
  		$('#hero').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
 	</script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		var v1 = $('#hero').height();
-	  	$(window).scroll(function () {
-	      //if you hard code, then use console
-	      //.log to determine when you want the 
-	      //nav bar to stick.  
-	      	console.log(v1)
-	     	console.log($('#navbar').outerHeight(true))
-    		if ($(window).scrollTop() > v1) {
-      			$('#navbar').addClass('navbar-fixed');
-      			$('#content').addClass('navbar-fix')
-    		}
-    		if ($(window).scrollTop() < (v1+1)) {
-      			$('#navbar').removeClass('navbar-fixed');
-      			$('#content').removeClass('navbar-fix')
-    		}
-	  	});
-	});
-	</script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		var h1 = $('#hero').height();
-  		var h2 = $('#textbox').height();
-  		var h3 = ((h1 -h2) /2);
-  		var w1 = $('#navbox').width();
-  		console.log(h1)
-  		console.log(h2)
-  		console.log(h3)
-  		console.log(w1)
-  		$('#textbox').css( "padding-top", h3 );
-	  	$(window).resize(function () {
-	  		var h1 = $('#hero').height();
-	  		var h2 = $('#textbox').height();
-	  		var h3 = ((h1 -h2) /2);
-  			$('#textbox').css( "padding-top", h3 );
-	  	});
-	});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-	  		$("#menuToggle").click(function(){
-			    $("#expandableMenu").toggle();
-			});
-	  	});
-	</script>
-</body>
+	<script src="js/nav.js"></script>
+	<script src="js/text.js"></script>
+	<script src="js/toggle.js"></script>
+	</body>
 </html>
