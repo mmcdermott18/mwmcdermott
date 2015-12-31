@@ -117,6 +117,7 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .8em;
+  margin-top: 5px;
 }
 p {
   font-weight: 300;
@@ -253,8 +254,29 @@ nav a:hover {
 .navbar-fix {
   padding-top: 73px;
 }
+/* ---- bird nav styles ---- */
+#birdnav {
+  width: 463px;
+  margin: 0 auto 10px;
+}
+
+#birdnav .button {
+  float: left;
+  padding: 0 20px;
+  cursor: pointer;
+}
+#birdnav .button p {
+  text-transform: uppercase;
+  font-size: .7em;
+}
+#birdnav .button p a {
+  text-decoration: none;
+}
 
 /* ---- main styles ---- */
+.mix {
+  display: inline-block;
+}
 .reg {
   font-style: normal;
 }
@@ -292,6 +314,23 @@ nav a:hover {
   text-decoration: none;
   color: royalblue; 
   border-bottom: 1px dotted royalblue;
+}
+#birdgrid {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.singleblock {
+  /*display: inline-block;*/
+  width: 30%;
+  margin: 1.5%;
+}
+.notactive {
+  display: none;
+}
+#randomOrder {
+  display: none;
 }
 
 /* ---- footer styles ---- */
@@ -443,6 +482,16 @@ footer a:hover {
   #headlogo h1.twoline {
     font-size: 2.9em;
   }
+  #birdgrid {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.singleblock {
+  width: 47%;
+  margin: 1.5%;
+}
 }
 
 @media screen and (max-width: 861px) {
@@ -556,6 +605,32 @@ footer a:hover {
     width: 100%;
     float: left;
   }
+  #birdgrid {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+  .singleblock {
+    width: 100%;
+    margin: 1.5% 0;
+  }
+  /* ---- bird nav styles ---- */
+#birdnav {
+  width: 343px;
+  margin: 0 auto;
+}
+#birdnav .button {
+  float: left;
+  padding: 0 10px;
+}
+#birdnav .button p {
+  text-transform: uppercase;
+  font-size: .7em;
+}
+#birdnav .button p a {
+  text-decoration: none;
+}
   /* ---- footer nav ---- */
   footer {
     width: 100%;
@@ -584,6 +659,10 @@ footer a:hover {
   .singleimg {
     width: 50%;
     margin: 15px auto;
+  }
+  .singlehor {
+    width: 100%;
+    margin: 15px auto 0;
   }
 }
 
