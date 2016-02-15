@@ -8,7 +8,11 @@ X - Social icons
 _ - Bird page
 	X - Randomize order
 	X - Filters
-	_ - Individual bird pages?
+	_ - How to deal with bird info
+		_ - Individual bird pages?
+		_ - Lightbox individual birds? 
+			http://www.poncecitymarket.com/directory/
+		_ - Nothing?
 	_ - Get photos of all birds
 
 
